@@ -10,7 +10,7 @@ export default function ProjectCard({
   gitHublink,
 }) {
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center gap-2 pb-5 w-80 sm:w-90 rounded-2xl bg-blue-50">
+    <div className="relative z-10 flex flex-col items-center justify-center gap-2 pb-5 w-80 sm:w-90 lg:w-100 rounded-2xl bg-blue-50">
       <img src={image} alt={title} className="w-full h-full rounded-2xl" />
       <h1 className="font-bold text-center text-blue-300">{title}</h1>
       <p className="px-4 font-medium text-justify text-gray-400">

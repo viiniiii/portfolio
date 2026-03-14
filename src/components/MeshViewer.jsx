@@ -2,11 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
+// Preload the model
+useGLTF.preload("/models/snowman.glb");
+
 function Mesh({
   modelPath,
   position = [0, 0, 0],
   scale = 1,
   rotation = [0, 0, 0],
+  onLoaded,
 }) {
   const group = useRef();
   const { scene, animations } = useGLTF(modelPath);
@@ -17,7 +21,9 @@ function Mesh({
       const firstAnimation = Object.keys(actions)[0];
       actions[firstAnimation]?.reset().play();
     }
-  }, [actions]);
+    // Call onLoaded when model is ready
+    onLoaded?.();
+  }, [actions, onLoaded]);
 
   return (
     <primitive
@@ -32,6 +38,8 @@ function Mesh({
 
 export default function MeshViewer({ modelPath }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [dpr, setDpr] = useState(isMobile ? 0.5 : 0.8);
 
   useEffect(() => {
     const handleResize = () => {
@@ -41,6 +49,14 @@ export default function MeshViewer({ modelPath }) {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const handleModelLoaded = () => {
+    setIsLoaded(true);
+    // Increase quality after model loads
+    setTimeout(() => {
+      setDpr(isMobile ? 1 : Math.min(window.devicePixelRatio, 1.5));
+    }, 100);
+  };
 
   return (
     <div
@@ -63,7 +79,13 @@ export default function MeshViewer({ modelPath }) {
           near: 0.1,
           far: 1000,
         }}
-        dpr={Math.min(window.devicePixelRatio, 2)}
+        dpr={dpr}
+        performance={{ min: 0.5, max: isLoaded ? 1 : 0.8 }}
+        gl={{
+          alpha: true,
+          antialias: isLoaded && !isMobile,
+          powerPreference: "high-performance",
+        }}
       >
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 5]} intensity={1} />
@@ -81,6 +103,7 @@ export default function MeshViewer({ modelPath }) {
               : 0.9
           }
           rotation={[0, -Math.PI / 4, 0]}
+          onLoaded={handleModelLoaded}
         />
       </Canvas>
     </div>

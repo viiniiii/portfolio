@@ -22,6 +22,12 @@ import { VscGraphScatter } from "react-icons/vsc";
 import { VscGraph } from "react-icons/vsc";
 import { SiNumpy } from "react-icons/si";
 import { SiJupyter } from "react-icons/si";
+import { PiNetworkFill } from "react-icons/pi";
+import { MdOutlineTimeline } from "react-icons/md";
+import { TbReportAnalytics } from "react-icons/tb";
+import { TbReportMoney } from "react-icons/tb";
+import { MdOutlineSettingsSystemDaydream } from "react-icons/md";
+import { BsDatabaseFill } from "react-icons/bs";
 import { PiBicycle } from "react-icons/pi";
 import { FaChess } from "react-icons/fa";
 import { LuBookText } from "react-icons/lu";
@@ -97,7 +103,7 @@ export default function App() {
         hopn: {
           work: "HOPn",
           position: "Frontend Developer Intern",
-          period: "June 2025 - ongoing",
+          period: "June 2025 - December 2025",
           location: "Munich, Germany - Remote",
           description:
             "Worked as a Frontend Developer on a real-world commercial application, which is going to be released soon in Germany. Built the client-side using JavaScript, React, and Tailwind CSS. Collaborated closely with a UI/UX Designer to refine the interface and improve user experience. Coordinated frontend tasks with another front-end developer and resolved merge conflicts. Communicated with the backend developer to define and refine API requests and responses. Worked alongside a QA engineer to resolve bugs and other issues.",
@@ -136,23 +142,22 @@ export default function App() {
         },
       },
       projects: {
+        rent: {
+          title: "Rent Price Predictor in Berlin",
+          description:
+            "Wrote a script to scrape over 22000 listings in Berlin with 28 features. Cleaned the data set and performed detailed EDA. Trained, tested and compared different ML models with a final dataset of 15500 samples and 22 features. Interpreted the models using SHAP values and deployed the best model.",
+          technologies: [
+            "Python",
+            "Machine Learning",
+            "Data Analytics",
+            "Selenium",
+          ],
+        },
         keyword: {
           title: "Albanian Keyword Extractor",
           description:
-            "A trained scapy model with supervized learning for extracting keywords in albanian from text files.",
-          technologies: ["Python", "Machine Learning", "NLP"],
-        },
-        ticket: {
-          title: "Ticket Price Trackter",
-          description:
-            "A script that scrapes rental house listings from a newspaper website, filters them according to user preferences, and formats the results for better readability.",
-          technologies: ["Python", "HTML", "CSS", "Selenium"],
-        },
-        rent: {
-          title: "Renting House Posts Scraper",
-          description:
-            "A script that finds the cheapest flights from Tirana to anywhere for trips under a week, and neatly formats the results for easy reading.",
-          technologies: ["Python", "HTML", "CSS", "Selenium"],
+            "Built a complete NLP pipeline for Albanian keyword extraction. Labeled a custom dataset using Label Studio with over 500 annotated text samples. Trained a spaCy NER model with supervised learning, achieving high precision on keyword extraction tasks.",
+          technologies: ["Python", "spaCy", "NLP", "Label Studio"],
         },
       },
     },
@@ -183,7 +188,7 @@ export default function App() {
         hopn: {
           work: "HOPn",
           position: "Praktikant Frontend-Entwicklung",
-          period: "Juni 2025 - laufend",
+          period: "Juni 2025 - Dezember 2025",
           location: "München, Deutschland - Remote",
           description:
             "Tätig als Frontend-Entwickler an einer realen, kommerziellen Anwendung, die bald in Deutschland veröffentlicht wird. Client-Seite mit JavaScript, React und Tailwind CSS aufgebaut. Eng mit einem UI/UX-Designer zusammengearbeitet, um die Oberfläche zu verfeinern und die Nutzererfahrung zu verbessern. Frontend-Aufgaben mit einem weiteren Frontend-Entwickler koordiniert und Merge-Konflikte gelöst. Mit dem Backend-Entwickler kommuniziert, um API-Anfragen und -Antworten zu definieren und zu verfeinern. Gemeinsam mit einem QA Engineer Bugs und andere Probleme behoben.",
@@ -222,28 +227,39 @@ export default function App() {
         },
       },
       projects: {
+        rent: {
+          title: "Mietpreisprognose in Berlin",
+          description:
+            "Ein Skript geschrieben, um über 22000 Inserate in Berlin mit 28 Features zu scrapen. Den Datensatz bereinigt und detaillierte EDA durchgeführt. Verschiedene ML-Modelle trainiert, getestet und verglichen mit einem finalen Datensatz von 15500 Samples und 22 Features. Die Modelle mit SHAP-Werten interpretiert und das beste Modell deployed.",
+          technologies: [
+            "Python",
+            "Machine Learning",
+            "Data Analytics",
+            "Selenium",
+          ],
+        },
         keyword: {
           title: "Albanischer Schlüsselwort-Extraktor",
           description:
-            "Ein trainiertes Scapy-Modell mit überwachten Lernverfahren zur Extraktion von Schlüsselwörtern aus albanischen Textdateien.",
-          technologies: ["Python", "Machine Learning", "NLP"],
-        },
-        ticket: {
-          title: "Ticketpreis-Tracker",
-          description:
-            "Ein Skript, das Wohnungsinserate von einer Zeitungswebsite scraped, sie nach Nutzerpräferenzen filtert und die Ergebnisse übersichtlich formatiert.",
-          technologies: ["Python", "HTML", "CSS", "Selenium"],
-        },
-        rent: {
-          title: "Scraper für Wohnungsanzeigen",
-          description:
-            "Ein Skript, das die günstigsten Flüge von Tirana aus für Reisen unter einer Woche findet und die Ergebnisse übersichtlich darstellt.",
-          technologies: ["Python", "HTML", "CSS", "Selenium"],
+            "Eine vollständige NLP-Pipeline für die albanische Schlüsselwort-Extraktion entwickelt. Einen benutzerdefinierten Datensatz mit über 500 annotierten Text-Samples in Label Studio gelabelt. Ein spaCy NER-Modell mit überwachtem Lernen trainiert und eine hohe Präzision bei der Schlüsselwort-Extraktion erreicht.",
+          technologies: ["Python", "spaCy", "NLP", "Label Studio"],
         },
       },
     },
   };
   const skills = [
+    { icon: FaPython, name: "Python" },
+    { icon: SiNumpy, name: "NumPy" },
+    { icon: SiJupyter, name: "Jupyter" },
+    { icon: VscGraph, name: "Data Analytics" },
+    { icon: BsDatabaseFill, name: "SQL" },
+    { icon: VscGraphScatter, name: "Machine Learning" },
+
+    { icon: PiNetworkFill, name: "Deep Learning" },
+    { icon: TbReportAnalytics, name: "Econometrics" },
+    { icon: MdOutlineTimeline, name: "Time Series" },
+    { icon: TbReportMoney, name: "Financial Analytics" },
+
     { icon: FaHtml5, name: "HTML5" },
     { icon: FaCss3Alt, name: "CSS3" },
     { icon: IoLogoJavascript, name: "JavaScript" },
@@ -256,12 +272,6 @@ export default function App() {
     { icon: SiExpress, name: "Express.js" },
 
     { icon: FaGitAlt, name: "Git" },
-    { icon: FaPython, name: "Python" },
-
-    { icon: SiNumpy, name: "NumPy" },
-    { icon: SiJupyter, name: "Jupyter" },
-    { icon: VscGraph, name: "Data Analytics" },
-    { icon: VscGraphScatter, name: "Machine Learning" },
   ];
   const hobbies = [
     { icon: PiBicycle, en: "Cycling", de: "Radfahren" },
@@ -386,11 +396,21 @@ export default function App() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-5 px-2 pb-15 sm:pb-20 md:pb-25 sm:px-5 md:px-10 lg:px-40">
+      <div className="flex flex-col gap-5 px-2 pb-15 sm:pb-20 md:pb-25 sm:px-5 md:px-10 xl:px-60">
         <h1 className="text-3xl font-extrabold text-center text-blue-300">
           {translations[language].sections.projects}
         </h1>
-        <div className="flex flex-row flex-wrap justify-around gap-7">
+        <div className="flex flex-row flex-wrap justify-around gap-7 xl:gap-10">
+          <ProjectCard
+            key="rent"
+            image="images/rent_prediction.png"
+            title={translations[language].projects.rent.title}
+            description={translations[language].projects.rent.description}
+            technologies={translations[language].projects.rent.technologies}
+            gitHublink="https://github.com/viiniiii/rent_prices_prediction"
+            link="https://rentpricesprediction.vercel.app/"
+          />
+
           <ProjectCard
             key="keyword"
             image="images/KeywordExtraction.png"
@@ -399,25 +419,6 @@ export default function App() {
             technologies={translations[language].projects.keyword.technologies}
             link="https://github.com/viiniiii/albanian_Keyword_Extraction_AI"
             gitHublink="https://github.com/viiniiii/albanian_Keyword_Extraction_AI"
-          />
-
-          <ProjectCard
-            key="ticket"
-            image="images/ticketPrices.png"
-            title={translations[language].projects.ticket.title}
-            description={translations[language].projects.ticket.description}
-            technologies={translations[language].projects.ticket.technologies}
-            gitHublink="https://github.com/viiniiii/shtepi_me_qera"
-          />
-
-          <ProjectCard
-            key="rent"
-            image="images/rentNotification.jpg"
-            title={translations[language].projects.rent.title}
-            description={translations[language].projects.rent.description}
-            technologies={translations[language].projects.rent.technologies}
-            link="https://github.com/viiniiii/shtepi_me_qera"
-            gitHublink="https://github.com/viiniiii/shtepi_me_qera"
           />
         </div>
       </div>
