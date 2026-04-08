@@ -30,7 +30,7 @@ export default function EducationCard({
               {period}
             </span>
           </div>
-          <p className="text-sm text-gray-500 sm:leading-relaxed">
+          <p className="text-sm text-gray-500 whitespace-pre-line sm:leading-relaxed">
             {description}
           </p>
         </div>

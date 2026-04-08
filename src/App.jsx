@@ -84,13 +84,11 @@ export default function App() {
       hero: {
         name: "Hey I'm Edvin Perfundi",
         title: "Data Scientist | Frontend Developer",
-        about: `I'm a Data Science student who loves preparing models and analyzing
-      data sets, driven by curiosity to discover hidden and interesting
-      trends. I'm also a frontend developer with a passion for
-      implementing designs to the last detail and paying attention to even
-      the smallest elements. Another thing about me is that I enjoy
-      challenging the stereotype that only black- and blue-themed websites
-      can look cool.`,
+        about: `I’m a Data Science student passionate about building models and analyzing datasets to uncover hidden 
+        patterns and useful information. My curiosity pushes me to explore complex datasets and identify 
+        important patterns. With a background in frontend development, I possess a sharp eye for detail 
+        to dashboards and data visualization, making sure that insights are accurate and easily understood. 
+        I'm now totally committed to developing my abilities in predictive modeling and data analysis.`,
       },
       sections: {
         work: "Work Experience",
@@ -103,7 +101,7 @@ export default function App() {
         hopn: {
           work: "HOPn",
           position: "Frontend Developer Intern",
-          period: "June 2025 - December 2025",
+          period: "September 2025 - February 2026",
           location: "Munich, Germany - Remote",
           description:
             "Worked as a Frontend Developer on a real-world commercial application, which is going to be released soon in Germany. Built the client-side using JavaScript, React, and Tailwind CSS. Collaborated closely with a UI/UX Designer to refine the interface and improve user experience. Coordinated frontend tasks with another front-end developer and resolved merge conflicts. Communicated with the backend developer to define and refine API requests and responses. Worked alongside a QA engineer to resolve bugs and other issues.",
@@ -111,18 +109,22 @@ export default function App() {
         softwareBusiness: {
           work: "Software Business S.r.l",
           position: "Fullstack Developer Intern",
-          period: "May 2025 - July 2025",
+          period: "June 2025 - August 2025",
           location: "Tirana, Albania - Onsite",
-          description:
-            "Implemented a simple client-server architecture using gRPC and used Docker to containerize it. Resolved issues of AI-generated code and fixed bugs in a project that used an Express server to execute Python scripts for a battery setup machine. Analyzed the codebase to identify and remove unused Node.js dependencies in order to improve the performance of the server.",
+          description: `I implemented a client-server architecture in Python and containerized it with Docker.
+            In addtion, I debugged AI-generated Express.js server code executing Python scripts for a 
+            battery system and analyzed a Node.js codebase in order to refactor it by removing 
+            unused dependencies which improved maintainability and performance. 
+            I also implemented addiotional features based on client requests.`,
         },
         division5: {
           work: "Division5",
           position: "3D Web Developer Intern",
           period: "March 2025 - May 2025",
           location: "Tirana, Albania - Onsite",
-          description:
-            "Developed interactive 3D web experiences using Babylon.js, allowing users to visualize and interact with dynamic 3D models in real-time. Set up backend endpoints to deliver generated 3D models through efficient API responses. Built and maintained backend endpoints to handle user input, process it, and return structured data. Connected with Azure services to process user-submitted text and receive corresponding structured JSON responses.",
+          description: `I researched technologies for text-to-speech and mapping speech to 3D character animations, 
+            then developed an interactive 3D web application using Babylon.js and Express.js that allows 
+            users to generate speaking 3D character models from text input. `,
         },
       },
       education: {
@@ -130,15 +132,15 @@ export default function App() {
           university: "Free University of Berlin",
           degree: "M.Sc Data Science",
           period: "October 2025 - ongoing",
-          description:
-            "Focusing on Data Structures, Statistics, Programming in Python, Advanced Statistics, Artificial Intelligence, Machine Learning and Databases.",
+          description: `Grade: 1.7
+            Activities and societies: Main subjects: Advanced Machine Learning, Advanced Statistics, Deep Learning, Computer Vision, Programming in Python, Data Analytics, Databases, etc.`,
         },
         ut: {
           university: "University of Tirana",
           degree: "B.Sc Business Informatics",
           period: "October 2022 - June 2025",
-          description:
-            "Took courses in Algorithms, Data Structures, Computer Architecture, Operating Systems, Databases, Networking, OOP, Web Programming, System Analysis, Calculus, Linear Algebra, Applied Mathematics, Statistics, Applied Statistics and Econometrics.",
+          description: `Grade: 1.1
+            Main subjects: Algorithms, Data structures, Computer Architecture, Operating Systems, Databases, Networking, Management of Information Systems, Web Programming, Econometrics, Statistics, etc.`,
         },
       },
       projects: {
@@ -170,12 +172,13 @@ export default function App() {
       hero: {
         name: "Hallo, ich bin Edvin Perfundi",
         title: "Data Scientist | Frontend-Entwickler",
-        about: `Ich bin Data-Science-Student und bereite gern Modelle vor und
-      analysiere Datensätze, getrieben von der Neugier, verborgene und
-      interessante Trends zu entdecken. Außerdem bin ich Frontend-Entwickler
-      mit Leidenschaft fürs Detail und achte selbst auf kleinste Elemente.
-      Außerdem macht es mir Spaß, das Klischee herauszufordern, dass nur
-      schwarz- und blau-gedeckte Websites cool wirken können.`,
+        about: `Ich bin Student der Data Science und leidenschaftlich daran interessiert, 
+        Modelle zu entwickeln und Datensätze zu analysieren, um verborgene Muster und nützliche Informationen 
+        zu entdecken. Meine Neugier treibt mich dazu, komplexe Datensätze zu untersuchen und relevante Zusammenhänge 
+        zu identifizieren. Durch meine Erfahrung in der Frontend-Entwicklung habe ich ein ausgeprägtes Auge für Details 
+        in Dashboards und Datenvisualisierungen, sodass Erkenntnisse sowohl präzise als auch leicht verständlich 
+        präsentiert werden. Ich konzentriere mich nun vollständig darauf, meine Fähigkeiten in Predictive Modeling 
+        und Datenanalyse weiterzuentwickeln.`,
       },
       sections: {
         work: "Berufserfahrung",
@@ -188,7 +191,7 @@ export default function App() {
         hopn: {
           work: "HOPn",
           position: "Praktikant Frontend-Entwicklung",
-          period: "Juni 2025 - Dezember 2025",
+          period: "September 2025 - Februar 2026",
           location: "München, Deutschland - Remote",
           description:
             "Tätig als Frontend-Entwickler an einer realen, kommerziellen Anwendung, die bald in Deutschland veröffentlicht wird. Client-Seite mit JavaScript, React und Tailwind CSS aufgebaut. Eng mit einem UI/UX-Designer zusammengearbeitet, um die Oberfläche zu verfeinern und die Nutzererfahrung zu verbessern. Frontend-Aufgaben mit einem weiteren Frontend-Entwickler koordiniert und Merge-Konflikte gelöst. Mit dem Backend-Entwickler kommuniziert, um API-Anfragen und -Antworten zu definieren und zu verfeinern. Gemeinsam mit einem QA Engineer Bugs und andere Probleme behoben.",
@@ -196,18 +199,22 @@ export default function App() {
         softwareBusiness: {
           work: "Software Business S.r.l",
           position: "Praktikant Fullstack-Entwicklung",
-          period: "Mai 2025 - Juli 2025",
+          period: "Juni 2025 - August 2025",
           location: "Tirana, Albanien - Vor Ort",
-          description:
-            "Eine einfache Client-Server-Architektur mit gRPC implementiert und mit Docker containerisiert. Probleme von KI-generiertem Code behoben und Bugs in einem Projekt gefixt, das einen Express-Server nutzte, um Python-Skripte für eine Batterie-Setup-Maschine auszuführen. Den Code analysiert, um ungenutzte Node.js-Abhängigkeiten zu identifizieren und zu entfernen, um die Serverleistung zu verbessern.",
+          description: `Ich habe eine Client-Server-Architektur in Python implementiert und diese mit Docker containerisiert.
+          Zusätzlich habe ich AI-generierten Express.js-Servercode, der Python-Skripte für ein Batteriesystem ausführt, 
+          debuggt und eine Node.js-Codebasis analysiert, um ungenutzte Abhängigkeiten zu entfernen, 
+          wodurch die Wartbarkeit und Performance verbessert wurde.
+          Außerdem habe ich zusätzliche Funktionen basierend auf Kundenanforderungen implementiert.`,
         },
         division5: {
           work: "Division5",
           position: "Praktikant 3D-Webentwicklung",
           period: "März 2025 - Mai 2025",
           location: "Tirana, Albanien - Vor Ort",
-          description:
-            "Interaktive 3D-Web-Erlebnisse mit Babylon.js entwickelt, damit Nutzer dynamische 3D-Modelle in Echtzeit visualisieren und damit interagieren können. Backend-Endpunkte eingerichtet, um generierte 3D-Modelle effizient per API bereitzustellen. Backend-Endpunkte erstellt und gewartet, um Nutzereingaben zu verarbeiten und strukturierte Daten zurückzugeben. Anbindung an Azure-Dienste, um vom Nutzer übermittelten Text zu verarbeiten und entsprechende strukturierte JSON-Antworten zu erhalten.",
+          description: `Ich habe Technologien für Text-zu-Sprache und die Zuordnung von Sprache zu 3D-Charakteranimationen recherchiert.
+          Anschließend entwickelte ich eine interaktive 3D-Webanwendung mit Babylon.js und Express.js, die es Nutzern ermöglicht, aus Texteingaben sprechende 3D-Charaktermodelle zu generieren.
+          `,
         },
       },
       education: {
@@ -215,15 +222,15 @@ export default function App() {
           university: "Freie Universität Berlin",
           degree: "M.Sc Data Science",
           period: "Oktober 2025 - laufend",
-          description:
-            "Schwerpunkte: Datenstrukturen, Statistik, Programmierung in Python, Fortgeschrittene Statistik, Künstliche Intelligenz, Maschinelles Lernen und Datenbanken.",
+          description: `Note: 1,7
+          Hauptfächer: Advanced Machine Learning, Advanced Statistics, Deep Learning, Computer Vision, Programmierung in Python, Datenanalyse, Datenbanken, etc.`,
         },
         ut: {
           university: "Universität Tirana",
           degree: "B.Sc Wirtschaftsinformatik",
           period: "Oktober 2022 - Juni 2025",
-          description:
-            "Kurse in Algorithmen, Datenstrukturen, Computerarchitektur, Betriebssysteme, Datenbanken, Netzwerke, OOP, Webprogrammierung, Systemanalyse, Analysis, Lineare Algebra, Angewandte Mathematik, Statistik, Angewandte Statistik und Ökonometrie.",
+          description: `Note: 1,1
+          Hauptfächer: Algorithmen, Datenstrukturen, Rechnerarchitektur, Betriebssysteme, Datenbanken, Netzwerke, Management von Informationssystemen, Webprogrammierung, Ökonometrie, Statistik, etc.`,
         },
       },
       projects: {
