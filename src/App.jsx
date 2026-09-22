@@ -132,15 +132,17 @@ export default function App() {
           university: "Free University of Berlin",
           degree: "M.Sc Data Science",
           period: "October 2025 - ongoing",
-          description: `Grade: 1.7
-            Activities and societies: Main subjects: Advanced Machine Learning, Advanced Statistics, Deep Learning, Computer Vision, Programming in Python, Data Analytics, Databases, etc.`,
+          description: `Grade: 1.4
+            Activities and societies: Main subjects: Advanced Machine Learning, Advanced Statistics, Databases, Data Analytics and Data
+            Visualization, Time Series Analysis, Data Integration and Large-Scale Analysis.`,
         },
         ut: {
           university: "University of Tirana",
           degree: "B.Sc Business Informatics",
           period: "October 2022 - June 2025",
           description: `Grade: 1.1
-            Main subjects: Algorithms, Data structures, Computer Architecture, Operating Systems, Databases, Networking, Management of Information Systems, Web Programming, Econometrics, Statistics, etc.`,
+            Main subjects: Algorithms, Data Structures, Databases, Networking, Management of Information Systems, Web
+            Programming, Econometrics, Statistics, Accounting, Financial Management.`,
         },
       },
       projects: {
@@ -222,15 +224,17 @@ export default function App() {
           university: "Freie Universität Berlin",
           degree: "M.Sc Data Science",
           period: "Oktober 2025 - laufend",
-          description: `Note: 1,7
-          Hauptfächer: Advanced Machine Learning, Advanced Statistics, Deep Learning, Computer Vision, Programmierung in Python, Datenanalyse, Datenbanken, etc.`,
+          description: `Note: 1,4
+          Hauptfächer:  Fortgeschrittenes Machine Learning, Fortgeschrittene Statistik, Datenbanken, Datenanalyse und
+          Datenvisualisierung, Zeitreihenanalyse, Datenintegration und Analyse großer Datenmengen.`,
         },
         ut: {
           university: "Universität Tirana",
           degree: "B.Sc Wirtschaftsinformatik",
           period: "Oktober 2022 - Juni 2025",
           description: `Note: 1,1
-          Hauptfächer: Algorithmen, Datenstrukturen, Rechnerarchitektur, Betriebssysteme, Datenbanken, Netzwerke, Management von Informationssystemen, Webprogrammierung, Ökonometrie, Statistik, etc.`,
+          Hauptfächer: Algorithmen, Datenstrukturen, Datenbanken, Netzwerke, Management von Informationssystemen,
+          Webprogrammierung, Ökonometrie, Statistik, Rechnungswesen, Finanzmanagement.`,
         },
       },
       projects: {
@@ -415,7 +419,7 @@ export default function App() {
             description={translations[language].projects.rent.description}
             technologies={translations[language].projects.rent.technologies}
             gitHublink="https://github.com/viiniiii/rent_prices_prediction"
-            link="https://rentpricesprediction.vercel.app/"
+            link="https://berlin-rent-price-evaluation.streamlit.app/"
           />
 
           <ProjectCard
